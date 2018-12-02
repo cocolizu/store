@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>华为商城头部</title>
+	</head>
+ <body>
+	<div class="header">
+			<!--返回顶部-->
+			<div class='backtop'>
+				<a href="#">顶部</a>
+			</div>
+			<div class='head'>
+				<div class='header_content'>
+					<div class='h_left'>
+						<ul>
+							<li>
+								<a href="#">
+									首页<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									华为官网<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									荣耀官网<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									花粉俱乐部<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									帮助中心<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									V码(优购码)<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									企业购<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									政企服务<span>丨</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Select Region<span>丨</span>
+								</a>
+							</li>
+							<li onmouseover='showDownload();' onmouseout='hideDownload();'>
+								<a href="#">
+									下载APP <i class='fa fa-caret-down'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class='h_right'>
+						<ul>
+							<li>
+								<a href="#" id='wellogin2'>
+									<i class='fa fa-user'></i> <span id='userinfo2'></span>
+								</a>
+								<a href="#" id='wellogin' onclick='showOrHideLogin(1);return false;' >
+									<i class='fa fa-user'></i> <span id='userinfo'>登录</span>
+								</a>
+								
+							</li>
+							<li id='init2'>
+								<a href="register.html" target='_blank'>
+									<i class='fa fa-registered'></i> 注册
+								</a>
+							</li>
+							<li class='init' id='init'>
+								<a href="#" onclick='delCookie();return false;'>
+									<i class='fa fa-power-off' style='color:#ca141d;'></i> 退出
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class='fa fa-shopping-cart'></i> 购物车(0)
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class='header_content2'>
+					<div><a href="index.html"><img src="img/logo.png"></a></div>
+					<div class='h2_center'>
+						<ul>
+							<li>
+								<a href="list.html">华为专区</a>
+							</li>
+							<li>
+								<a href="list.html">荣耀专区</a>
+							</li>
+							<li>
+								<a href="list.html">HUAWEI P20</a>
+							</li>
+							<li>
+								<a href="list.html">荣耀10</a>
+							</li>
+							<li>
+								<a href="list.html">nova 3i</a>
+							</li>
+							<li>
+								<a href="list.html">荣耀V10</a>
+							</li>
+						</ul>
+					</div>
+					<div class='h2_right'>
+						<input type="text" id='sraech' placeholder="请输入搜索内容">	
+						<a href="#">
+							<i class='fa fa-search'></i>
+						</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+ </body>
+</html>

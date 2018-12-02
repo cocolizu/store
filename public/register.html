@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/register.css">
+  <script src='js/checknum.js'></script>	
+  <title>HUAWEI注册</title>
+</head>
+<body onload='getCheckNum();'>
+	<div class='regheader'>
+		<div class='head'>
+			<a href="index.html"><img src="img/reg_logo.png" /></a>
+			<span>|</span>
+			<span>华为商城</span>
+		</div>
+		<div class='regnav'>
+			<a href="#">
+				<i class='fa fa-mobile'></i> 
+				<span>手机号</span>
+			</a>
+			<a href="#">
+				<i class='fa fa-envelope-o'></i>
+				<span>电子邮箱</span>
+			</a>
+			<div class='regtitle'>
+				已有华为帐号 <a href="#">登录&gt;&gt;</a>
+			</div>
+		</div>
+		<div class='regbody'>
+			<div class='reginput'>
+				<div class='rinput'> 
+					<span>国家/地区</span>
+					<input type="text" value='中国' id='area'>
+					<a href="#"><i class='fa fa-sort-desc'></i></a>
+				</div>
+				<div class='rinput'> 
+					<span>+86(中国)</span>
+					<input type="text" placeholder='请输入手机号' id='telnum'>
+				</div>
+				<div class='rinput'> 
+					<span>图形验证码</span>
+					<input type="text" placeholder='请输入图形验证码' id='checknum'>
+					<div>
+						<a href="#" id='getnum' title='看不清楚，换一张' onclick='getCheckNum();return false;'></a>
+					</div>
+				</div>
+				<div class='rinput'>
+					<span>短信验证码</span>
+					<input type="text" placeholder='请输入短信验证码' id='checknum2'>
+					<a href="#">获取验证码</a>
+				</div>
+				<div class='rinput'>
+					<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+					<input type="password" placeholder='请输入密码' id='pwd'>
+				</div>
+				<div class='rinput'> 
+					<span>确认密码</span>
+					<input type="password" placeholder='请再次输入密码' id='pwd2'>
+				</div>
+				<a href="#" class='regbtn'>注册</a>
+			</div>
+		</div>
+		<hr>
+		<div class='regfooter'>
+			<p>华为帐号用户协议&nbsp;&nbsp;|&nbsp;&nbsp;关于华为帐号与隐私的声明&nbsp;&nbsp;|&nbsp;&nbsp;常见问题</p>
+			<p>Copyright © 2011-2018  华为软件技术有限公司  版权所有  保留一切权利  苏B2-20070200号 | 苏ICP备09062682号-9</p>
+		</div>
+	</div>
+ </body>
+</html>

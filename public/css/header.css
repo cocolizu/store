@@ -1,0 +1,146 @@
+*{margin:0px;padding:0px;}
+a{text-decoration:none;}
+body{font-family:'yahei';overflow-x:hidden;}
+.backtop{
+	position:fixed;
+	width:50px;
+	height:50px;
+	background:rgba(0,0,0,0.5);
+	border-radius:50%;
+	text-align:center;
+	line-height:50px;
+	top:700px;
+	right:0px;
+}
+.backtop a{
+	font-size:12px;
+	color:white;
+}
+.header{
+	width:100%;
+	box-shadow:0px 1px 5px 1px #ddd;
+}
+.head{
+	position:relative;
+	height:120px;
+	width:1200px;
+	margin:0px auto;
+}
+.header_content,.header_content2{
+	position:absolute;
+	width:1200px;
+	margin:0 auto;
+	/*border:1px solid red;*/
+}
+.header_content{	
+	height:30px;
+	margin:20px 0px 0px;
+}
+.header_content2{
+	margin:60px 0px 10px;
+	height:50px;
+	line-height:50px;
+}
+.h_left{
+	float:left;
+	line-height:40px;
+}
+.h_right{
+	float:right;
+	line-height:40px;
+}
+.h_left ul,.h_right ul,.h2_center ul,.con_left ul,.show_header2 ul,.img2 ul{list-style:none;}
+.h_left ul li,.h_right ul li,.h2_center ul li{
+	float:left;
+}
+.h_right ul li{
+	margin-left:25px;
+}
+.h_left ul li a,.h_right ul li a{
+	display:block;
+	height:30px;
+	font-size:12px;
+	color:#666;
+	line-height:30px;
+}
+.h_left ul li a span{
+	margin:0px 2px;
+	color:#bbb;
+}
+.h_left ul li a:hover,.h_right ul li a:hover{
+	color:#ca141d;
+}
+.download{
+	display:none;
+	position:absolute;
+	top:-76px;
+	left:658px;
+	width:163.5px;
+	height:138px;
+	background:white;
+	text-align:center;
+	box-shadow:1px 1px 5px 0px #333;
+	z-index:10;
+}
+.download img{
+	position:absolute;
+	left:45px;
+	top:20px;
+}
+.download p{
+	position:absolute;
+	left:30px;
+	top:110px;
+	font-size:12px;
+	color:#3a3a3a;
+}
+.h2_center{
+	position:absolute;
+	top:0px;
+	left:250px;
+}
+.h2_center ul li{
+	height:40px;
+	margin-left:30px;
+}	
+.h2_center ul li:hover,.phone_nav ul li:not(:last-child):hover,.computer_nav ul li:not(:last-child):hover,.notebook_nav ul li:not(:last-child):hover{
+	border-bottom:2px solid #ca141d;
+}
+.h2_center ul li a{
+	color:#3a3a3a;
+}
+.h2_center ul li a:hover,.phone_nav ul li a:hover,.computer_nav ul li a:hover,.notebook_nav ul li a:hover{
+	color:#ca141d;
+}
+.h2_right{
+	position:absolute;
+	top:-2px;
+	right:32px;
+}
+.h2_right input{
+	width:270px;
+	height:32px;
+	border:1px solid #999;
+	outline:none;
+	padding-left:10px;
+	border-top-left-radius:2px;
+	border-bottom-left-radius:2px;
+}
+.h2_right input:hover{
+	border:1px solid #ca141d;
+}
+.h2_right a{
+	position:absolute;
+	top:10px;
+	left:282px;
+	display:block;
+	width:34px;
+	height:34px;
+	background:#ca141d;
+	text-align:center;
+	line-height:34px;
+	color:white;
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+}
+#wellogin2,.init{display:none;}

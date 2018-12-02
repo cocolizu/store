@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>商品信息</title>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">	
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src='js/products.js'></script>
+  <script src="js/cookie.js"></script>	
+  <script src="js/userlogin.js"></script>
+ </head>
+ <body onload='getCookie();'>
+	<!--登录界面-->
+	<div id='showlogin'></div>
+	<div id='head'></div>
+	<div class='contaniner'>
+		<div class='contain_nav'>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><i class='fa fa-angle-right'></i></li>
+				<li><a href="list.html">手机</a></li>
+				<li><i class='fa fa-angle-right'></i></li>
+				<li><a href="#">荣耀</a></li>
+				<li><i class='fa fa-angle-right'></i></li>
+				<li>
+					<span>荣耀10 GT游戏加速 AIS手持夜景 AI摄影手机 6GB+64GB 幻影蓝 全网通 双卡双待 荣耀10GT</span>
+				</li>
+			</ul>
+		</div>
+		<div class='contain_body'>
+			<div class='contain_left'>
+				<div class='left_top' id='dd' onmouseover='goMove();'>	
+					<img src="img/showdetail.jpg" id='showdetail'>
+					<div id='div1'></div>
+				</div>
+				<video src="video/v.f20.mp4" controls="controls" class='video' id='video' onmouseover='hideChange();'></video>
+				<a href="#" onclick='closeVideo();return false;'><i class='fa fa-close'></i></a>
+				<a href="#" class='left_top_a' onclick='showVideo();return false;'>
+					<i class='fa fa-play-circle'></i>
+					<span>视频</span>
+				</a>
+				<div class='changeimg' id='changeimg'>
+					<img src="img/showdetail.jpg" id='bigimg'>
+				</div>
+				<div class='left_bottom'>
+					<a href="#" onclick='preImg();return false;'>
+						<i class='fa fa-angle-left'></i>
+					</a>
+					<div class='lookdetail' id='lookdetail'>
+						<div class='lookimg' id='lookimg'>
+							<img class='ahover' src="img/detail1.jpg" onmouseover='lookDetail(0);'>
+							<img src="img/detail2.jpg" onmouseover='lookDetail(1);'>
+							<img src="img/detail3.jpg" onmouseover='lookDetail(2);'>
+							<img src="img/detail4.jpg" onmouseover='lookDetail(3);'>
+							<img src="img/detail5.jpg" onmouseover='lookDetail(4);'>
+							<img src="img/detail6.jpg" onmouseover='lookDetail(5);'>
+							<img src="img/detail7.jpg" onmouseover='lookDetail(6);'>
+						</div>
+					</div>
+					<a href="#"  onclick='nextImg();return false;'>
+						<i class='fa fa-angle-right'></i>
+					</a>
+				</div>
+			</div>
+			<div class='contain_right'>
+				<h3>
+					荣耀10 GT游戏加速 AIS手持夜景 AI摄影手机 6GB+64GB 幻影蓝 全网通 双卡双待 荣耀10GT
+				</h3>
+				<a href="#">限时优惠300元，赠蓝牙音箱+引擎耳机，现货速发></a>
+				<span>麒麟970AI芯片|GPU Turbo|手持超级夜景</span>
+				<div class='p_desc'>
+					<div class='desc1'>
+						<span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</span>
+						<span>抢购价</span>
+						<span>￥2299.00</span>
+						<span>￥2599</span>	
+					</div>
+					<div class='desc2'>
+						<span>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销</span>
+						<span>赠品</span>
+						<span>
+							<a href="#"><img src="img/product1.jpg"></a>
+						</span>
+						<span>
+							<a href="#"><img src="img/product2.jpg"></a>
+						</span>
+						<span><a href="#">选择></a></span>
+						<span>限时特价</span>
+						<span>限时优惠300元</span>
+						<span>整点赠送</span>
+						<span>10点/16点/20点下单前200赠AM115耳机（荣耀指定手机共享） </span>
+						<span>赠送积分</span>
+						<span>购买即赠商城积分，积分可抵现~</span>
+					</div>
+					<div class='desc3'>
+						<div class='desc3_fir'>
+							<span>服务说明</span>
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已满48元已免运费</span>
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由华为商城负责发货，并提供售后服务</span>
+						</div>
+						<div class='desc3_sec'>
+							<span>商品编号</span>
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2601010038102</span>
+						</div>
+					</div>
+					<div class='desc4' id='desc4'>
+						<span>选择颜色</span>
+						<a href="#" class="ahover" onclick='chooseColor(1,0);return false;'>
+							<img src="img/choose1.jpg">
+							<span name='pcolor'>幻影紫</span>
+						</a>
+						<a href="#"  onclick='chooseColor(1,1);return false;'>
+							<img src="img/choose2.jpg">
+							<span name='pcolor'>幻影蓝</span>
+						</a>
+						<a href="#"  onclick='chooseColor(1,2);return false;'>
+							<img src="img/choose3.jpg">
+							<span name='pcolor'>幻夜黑</span>
+						</a>
+						<a href="#"  onclick='chooseColor(1,3);return false;'>
+							<img src="img/choose4.jpg">
+							<span name='pcolor'>海鸥灰</span>
+						</a>
+						<a href="#"  onclick='chooseColor(1,4);return false;'>
+							<img src="img/choose5.jpg">
+							<span name='pcolor'>铃兰白</span>
+						</a>
+					</div>
+					<div class='desc5' id='desc5'>
+						<span>选择版本</span>
+						<a href="#" class="ahover" onclick='chooseColor(2,0);return false;'>全网通 6GB+64GB</a>
+						<a href="#"  onclick='chooseColor(2,1);return false;'>全网通 6GB+128GB</a>
+						<a href="#"  onclick='chooseColor(2,2);return false;'>全网通 8GB+128GB</a>
+					</div>
+					<div class='desc6' id='desc6'>
+						<span>选择套餐</span>
+						<a href="#" class="ahover"  onclick='chooseColor(3,0);return false;'>官方标配</a>
+						<a href="#"  onclick='chooseColor(3,1);return false;'>套餐一</a>
+						<a href="#"  onclick='chooseColor(3,2);return false;'>套餐二</a>
+					</div>
+					<div class='desc7'>
+						<span>保障服务</span>
+						<a href="#"  id='serv1'>
+							<span id='ser1'>延长服务宝1年 ￥158</span>
+							<i class='fa fa-angle-down'></i>	
+							<div class='service' id='service'>
+								<ul>
+									<li>
+										<input type="checkbox" id='ser1_inp1' value='延长服务宝1年 ￥158' onclick='hideService(1);'>
+										&nbsp;&nbsp;<span>延长服务宝1年 ￥158</span>
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;详情&gt;</span>
+									</li>
+									<li>
+										<input type="checkbox" id='ser1_inp2' value='延长服务宝半年 ￥88' onclick='hideService(2);'>
+										&nbsp;&nbsp;<span>延长服务宝半年 ￥88</span>
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;详情&gt;</span>
+									</li>
+								</ul>
+							</div>
+						</a>
+						<a href="#" id='serv2'>
+							<span id='ser2'>碎屏(含后盖)服务宝1年  ￥169</span>
+							<span><i class='fa fa-angle-down'></i></span>
+							<div class='service2' id='service2'>
+								<ul>
+									<li>
+										<input type="checkbox" id='ser2_inp1' value='碎屏(含后盖)服务宝1年 ￥169' onclick='hideService(3);'>
+										&nbsp;&nbsp;<span>碎屏(含后盖)服务宝1年 ￥169</span>
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;详情&gt;</span>
+									</li>
+									<li>
+										<input type="checkbox" id='ser2_inp2' value='碎屏(含后盖)服务宝半年 ￥89' onclick='hideService(4);'>
+										&nbsp;&nbsp;<span>碎屏(含后盖)服务宝半年 ￥89</span>
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;详情&gt;</span>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class='desc8'>
+						<span>已选择商品</span>
+						<span id='selcol'>幻影紫</span>
+						<span>/</span>
+						<span id='selver'>全网通 6GB+64GB</span>
+						<span>/</span>
+						<span id='selcon'>官方标配 </span>
+						<div class='buynum'>
+							<input type="text" id='buynum' value='1'>
+							<span id='addnum' onclick='buyNum(1);'><i class='fa fa-plus'></i></span>
+							<span id='cutnum' onclick='buyNum(2);'><i class='fa fa-minus'></i></span>
+						</div>
+						<a href="#">加入购物车</a>
+						<a href="#">立即下单</a>
+						<div class='phonebuy'>
+						</div>
+						<div class='someinfo'>
+							<a href="#">
+								<i class='fa fa-refresh'></i>
+								<div>
+									<span>以旧换新，</span>
+									<span>最高可抵5599元</span>
+								</div>
+							</a>
+							<a href="#">
+								<i class='fa fa-th-large'></i>
+								<div>
+									<span>用手机扫码进行购买</span>
+									<img src="img/erweima.png">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class='contain_body2'>
+			<div class='contain_body2_title'>
+				<span>推荐搭配</span>
+			</div>
+			<div class='contain_body2_content'>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/suggest1.jpg">
+							<p>荣耀10 GT游戏加速 AIS手持夜景 AI...</p>
+							<span>￥2299.00</span>
+						</a>
+					</li>
+					<li>
+						<span>+</span>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/suggest2.jpg">
+							<p>荣耀智能体脂秤（白色） </p>
+							<input type="checkbox" name='sel' onclick='selectBuy();'>
+							<span name='mon'>￥99.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/suggest3.jpg">
+							<p>荣耀移动电源10000mAh快充版</p>
+							<input type="checkbox" name='sel' onclick='selectBuy();'>
+							<span name='mon'>￥129.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/suggest4.jpg">
+							<p>荣耀小天鹅蓝牙音箱（白色） </p>
+							<input type="checkbox" name='sel'  onclick='selectBuy();'>
+							<span name='mon'>￥89.00</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/suggest5.jpg">
+							<p>荣耀心晴耳机 心率智能耳机（幻夜黑） </p>
+							<input type="checkbox" name='sel' onclick='selectBuy();'>
+							<span name='mon'>￥129.00</span>
+						</a>
+					</li>
+				</ul>
+				<div class='addbuy'>
+						<ul>
+							<li>
+								<span>已选择<span id='num'>0</span>个配件</span>
+							</li>
+							<li>
+								<span>组合价：￥<span id='addbuy_span'>2299.00</span></span>
+							</li>
+							<li>
+								<a href="#">加入购物车</a>
+							</li>
+							<li>
+								<a href="#">立即下单</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class='p_title'>
+			<a href="#">商品详情</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">规格参数</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">包装与售后</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">用户评价(79540)</a>
+		</p>
+		<div class='contain_img'>
+			<img src="img/contain_img.jpg">
+			<img src="img/contain_img2.jpg">
+			<img src="img/contain_img3.jpg">
+			<img src="img/contain_img4.jpg">
+			<img src="img/contain_img5.jpg">
+		</div>
+		<div class='download' id='download'>
+			<img src="img/erweima.png">
+			<p>扫一扫，下载客户端</p>
+		</div>
+	</div>
+	<div id='foot'></div>
+	<script src='js/productimg.js'></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/location.js"></script>
+ </body>
+</html>
